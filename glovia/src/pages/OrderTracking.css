@@ -1,0 +1,379 @@
+
+.tracking-page {
+  min-height: 80vh;
+  background: #fff5f8;
+  padding: 45px 6% 70px;
+  font-family: "Poppins", sans-serif;
+  color: #24232b;
+}
+
+.tracking-heading {
+  text-align: center;
+  margin-bottom: 35px;
+}
+
+.tracking-heading p {
+  color: #d9537f;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 3px;
+}
+
+.tracking-heading h1 {
+  font-size: 36px;
+  margin: 10px 0;
+  color: #221519;
+}
+
+.tracking-heading span {
+  color: #77727d;
+  font-size: 14px;
+}
+
+.tracking-container {
+  max-width: 1000px;
+  margin: auto;
+}
+
+.tracking-order-card,
+.tracking-progress-card,
+.tracking-info-card {
+  background: #fff;
+  border: 1px solid #f3dce5;
+  border-radius: 18px;
+  padding: 28px;
+  margin-bottom: 24px;
+  box-shadow: 0 5px 20px rgba(217, 83, 127, 0.05);
+}
+
+.tracking-order-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  padding-bottom: 22px;
+  border-bottom: 1px solid #f1e1e7;
+}
+
+.tracking-label,
+.tracking-order-info span {
+  display: block;
+  font-size: 12px;
+  color: #77727d;
+  margin-bottom: 8px;
+}
+
+.tracking-order-top h2 {
+  font-size: 20px;
+  margin: 0;
+  overflow-wrap: anywhere;
+}
+
+.tracking-status-badge {
+  background: #fce3ec;
+  color: #c64270;
+  padding: 10px 18px;
+  border-radius: 25px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.tracking-order-info {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  padding-top: 22px;
+}
+
+.tracking-order-info strong {
+  font-size: 15px;
+}
+
+.tracking-progress-card h2,
+.tracking-info-card h2 {
+  font-size: 20px;
+  margin: 0 0 25px;
+}
+
+.tracking-timeline {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.tracking-step {
+  display: flex;
+  gap: 18px;
+  position: relative;
+  min-height: 105px;
+}
+
+.tracking-step:not(:last-child)::before {
+  content: "";
+  position: absolute;
+  top: 44px;
+  left: 19px;
+  width: 2px;
+  height: calc(100% - 35px);
+  background: #eadde3;
+}
+
+.tracking-step.completed:not(:last-child)::before {
+  background: #d9537f;
+}
+
+.tracking-step-marker {
+  flex-shrink: 0;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #f5edf1;
+  border: 2px solid #e8dce2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #8a8188;
+  font-size: 14px;
+  font-weight: 600;
+  z-index: 1;
+}
+
+.tracking-step.completed .tracking-step-marker {
+  background: #d9537f;
+  color: #fff;
+  border-color: #d9537f;
+}
+
+.tracking-step.current .tracking-step-marker {
+  box-shadow: 0 0 0 5px #fce3ec;
+}
+
+.tracking-step-content {
+  padding: 4px 0 25px;
+}
+
+.tracking-step-content h3 {
+  font-size: 15px;
+  margin: 0 0 7px;
+}
+
+.tracking-step-content p {
+  font-size: 13px;
+  color: #77727d;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.tracking-current-label {
+  display: inline-block;
+  background: #fff0f5;
+  color: #c64270;
+  font-size: 11px;
+  font-weight: 600;
+  padding: 5px 10px;
+  border-radius: 20px;
+  margin-top: 9px;
+}
+
+.tracking-demo-note {
+  background: #fff4f8;
+  border-radius: 10px;
+  padding: 14px;
+  color: #8d5368;
+  font-size: 12px;
+  text-align: center;
+  margin: 15px 0 20px;
+}
+
+.tracking-update-btn {
+  display: block;
+  width: 100%;
+  min-height: 52px;
+  border: none;
+  border-radius: 28px;
+  background: #d9537f;
+  color: white;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.tracking-update-btn:hover {
+  background: #b9365b;
+  transform: translateY(-2px);
+}
+
+.tracking-delivered-message {
+  text-align: center;
+  background: #fce3ec;
+  color: #c64270;
+  padding: 18px;
+  border-radius: 12px;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.tracking-details-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  align-items: start;
+}
+
+.tracking-info-card {
+  margin-bottom: 0;
+}
+
+.tracking-info-card h3 {
+  font-size: 15px;
+  margin: 0 0 10px;
+}
+
+.tracking-info-card > p {
+  color: #77727d;
+  font-size: 13px;
+  line-height: 1.8;
+  margin: 3px 0;
+  overflow-wrap: anywhere;
+}
+
+.tracking-product {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 14px 0;
+  border-bottom: 1px solid #f1e1e7;
+}
+
+.tracking-product img {
+  width: 75px;
+  height: 80px;
+  object-fit: contain;
+  background: #fff5f8;
+  border-radius: 10px;
+}
+
+.tracking-product h4 {
+  font-size: 13px;
+  margin: 0 0 7px;
+}
+
+.tracking-product p {
+  color: #77727d;
+  font-size: 12px;
+  margin: 0 0 7px;
+}
+
+.tracking-product strong {
+  color: #d9537f;
+  font-size: 13px;
+}
+
+.tracking-total {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 18px;
+  margin-top: 8px;
+  font-size: 15px;
+}
+
+.tracking-total strong {
+  color: #d9537f;
+  font-size: 18px;
+}
+
+.tracking-actions {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+  margin-top: 28px;
+}
+
+.tracking-shop-btn,
+.tracking-orders-btn {
+  min-height: 52px;
+  padding: 14px 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-radius: 28px;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+  box-sizing: border-box;
+  transition: 0.3s;
+}
+
+.tracking-shop-btn {
+  background: #d9537f;
+  color: white;
+  border: 1px solid #d9537f;
+}
+
+.tracking-shop-btn:hover {
+  background: #b9365b;
+}
+
+.tracking-orders-btn {
+  background: white;
+  color: #d9537f;
+  border: 1px solid #d9537f;
+}
+
+.tracking-orders-btn:hover {
+  background: #fff0f5;
+}
+
+.tracking-empty {
+  min-height: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  text-align: center;
+  background: #fff5f8;
+}
+
+.tracking-empty a {
+  color: #d9537f;
+  text-decoration: none;
+}
+
+@media (max-width: 750px) {
+  .tracking-details-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .tracking-page {
+    padding: 30px 5% 50px;
+  }
+
+  .tracking-heading h1 {
+    font-size: 28px;
+  }
+
+  .tracking-order-card,
+  .tracking-progress-card,
+  .tracking-info-card {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .tracking-order-info {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  .tracking-actions {
+    grid-template-columns: 1fr;
+  }
+
+  .tracking-order-top h2 {
+    font-size: 16px;
+  }
+}
